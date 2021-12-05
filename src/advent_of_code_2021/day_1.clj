@@ -68,5 +68,6 @@
       (get-increases has-window-increased?)
       count-truthy))
 
-(count-increases depths)
-(count-increases-by-window depths 3)
+(defn run []
+  (println (str "Part 1: " (count-increases depths)))
+  (println (str "Part 2: " (count-increases-by-window depths 3))))
